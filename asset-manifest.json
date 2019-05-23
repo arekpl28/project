@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/project/static/css/main.7359da57.chunk.css",
+    "main.js": "/project/static/js/main.2016cecc.chunk.js",
+    "main.js.map": "/project/static/js/main.2016cecc.chunk.js.map",
+    "runtime~main.js": "/project/static/js/runtime~main.4b9e7fa5.js",
+    "runtime~main.js.map": "/project/static/js/runtime~main.4b9e7fa5.js.map",
+    "static/js/2.7a00debf.chunk.js": "/project/static/js/2.7a00debf.chunk.js",
+    "static/js/2.7a00debf.chunk.js.map": "/project/static/js/2.7a00debf.chunk.js.map",
+    "index.html": "/project/index.html",
+    "precache-manifest.1acdfe759c39a4ce6866d4635840bf56.js": "/project/precache-manifest.1acdfe759c39a4ce6866d4635840bf56.js",
+    "service-worker.js": "/project/service-worker.js",
+    "static/css/main.7359da57.chunk.css.map": "/project/static/css/main.7359da57.chunk.css.map",
+    "static/media/datavarehuset.png": "/project/static/media/datavarehuset.693051ec.png",
+    "static/media/kommune.png": "/project/static/media/kommune.f2091820.png",
+    "static/media/App.css": "/project/static/media/new-banner.3721f94a.png"
+  }
+}
