@@ -142,6 +142,10 @@ section.page div.home-banner div.wraper-icon div.icon div.etorg {
   left: 27.8%;
 }
 
+section.page div.home-banner div.wraper-icon div.icon a {
+  display: block;
+}
+
 section.page div.home-banner div.wraper-icon div.icon div.datavarehuset {
   top: 10%;
   left: 42.7%;

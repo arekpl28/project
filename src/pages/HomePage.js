@@ -7,7 +7,60 @@ import kommune from "../images/kommune.png";
 import komtek from "../images/komtek.png";
 import geodata from "../images/geodata.png";
 
+let lineList = [];
+for (let i = 0; i < 5; i++) {
+  const element = { name: "line" + [i + 1] };
+  lineList.push(element);
+}
+const iconsList = [
+  {
+    name: "e-Torg",
+    class: "etorg",
+    path: "/",
+    import: etorg
+  },
+  {
+    name: "Datavare- huset",
+    class: "datavarehuset",
+    path: "/",
+    import: datavarehuset
+  },
+  {
+    name: "Den digitale kommune",
+    class: "kommune",
+    path: "/",
+    import: kommune
+  },
+  {
+    name: "KOMTEK",
+    class: "komtek",
+    path: "/",
+    import: komtek
+  },
+  {
+    name: "Plan og geodata",
+    class: "geodata",
+    path: "/",
+    import: geodata
+  }
+];
 const HomePage = () => {
+  const lineItem = lineList.map(item => (
+    <div className={item.name} key={item.name}>
+      <img src={line} alt={item.name} />
+    </div>
+  ));
+
+  const icon = iconsList.map(item => (
+    <div className={item.class} key={item.name}>
+      <p>{item.name}</p>
+      <NavLink to={item.path}>
+        <img src={item.import} alt={item.name} />
+      </NavLink>
+    </div>
+  ));
+
+  console.log(lineItem);
   return (
     <>
       <div className="home-banner">
@@ -17,54 +70,9 @@ const HomePage = () => {
           </p>
         </div>
         <div className="wraper-icon">
-          <div className="line">
-            <div className="line1">
-              <NavLink to="/">
-                <img src={line} alt="line" />
-              </NavLink>
-            </div>
-            <div className="line2">
-              <NavLink to="/">
-                <img src={line} alt="line" />
-              </NavLink>
-            </div>
-            <div className="line3">
-              <NavLink to="/">
-                <img src={line} alt="line" />
-              </NavLink>
-            </div>
-            <div className="line4">
-              <NavLink to="/">
-                <img src={line} alt="line" />
-              </NavLink>
-            </div>
-            <div className="line5">
-              <NavLink to="/">
-                <img src={line} alt="line" />
-              </NavLink>
-            </div>
-          </div>
+          <div className="line">{lineItem}</div>
           <div className="icon">
-            <div className="etorg">
-              <p>e-Torg</p>
-              <img src={etorg} alt="etorg" />
-            </div>
-            <div className="datavarehuset">
-              <p>Datavare- huset</p>
-              <img src={datavarehuset} alt="datavarehuset" />
-            </div>
-            <div className="kommune">
-              <p>Den digitale kommune</p>
-              <img src={kommune} alt="kommune" />
-            </div>
-            <div className="komtek">
-              <p>KOMTEK</p>
-              <img src={komtek} alt="komtek" />
-            </div>
-            <div className="geodata">
-              <p>Plan og geodata</p>
-              <img src={geodata} alt="geodata" />
-            </div>
+            <ul>{icon}</ul>
           </div>
         </div>
       </div>
