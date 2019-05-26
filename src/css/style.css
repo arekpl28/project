@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+div.master-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.navigation-row {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px 0 20px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+div.navigation-row div.branding a img {
+  width: 120px;
+}
+
+div.navigation-row div.navigation {
+  font-size: 2rem;
+}
+
+div.navigation-row div.main-navigation {
+  display: none;
+}
+
+section.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 64.95px;
+  overflow: hidden;
+}
+
+div.ls-wrapper {
+  position: relative;
+  height: 25vw;
+  padding: 0 20px;
+  background-image: url("../images/new-banner.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+}
+
+div.ls-wrapper h1 {
+  display: block;
+  width: 18vw;
+  font-size: 2vw;
+}
+
+div.ls-wrapper h1 span {
+  color: #328812;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div {
+  position: absolute;
+}
+
+div.ls-wrapper div.icon-wrapper div.line img {
+  width: 0.3vw;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div.ls-in-out1 {
+  top: 28%;
+  left: 30%;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div.ls-in-out2 {
+  top: 27%;
+  left: 45%;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div.ls-in-out3 {
+  top: 39%;
+  left: 57%;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div.ls-in-out4 {
+  top: 31%;
+  left: 71%;
+}
+
+div.ls-wrapper div.icon-wrapper div.line div.ls-in-out5 {
+  top: 36%;
+  left: 87%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul img {
+  width: 5vw;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div {
+  position: absolute;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  color: #328812;
+  font-weight: bold;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div.etorg {
+  top: 15%;
+  left: 27.8%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div.datavarehuset {
+  top: 10%;
+  left: 42.7%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div.kommune {
+  top: 16%;
+  left: 54.7%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div.komtek {
+  top: 10%;
+  left: 68.7%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div.geodata {
+  top: 14%;
+  left: 84.7%;
+}
+
+div.ls-wrapper div.icon-wrapper div.icon ul div p {
+  display: block;
+  width: 5vw;
+  font-size: 1.2vw;
+  text-align: center;
+  padding-bottom: 1vw;
+}
+
+article.section1 {
+  padding: 20px;
+}
+
+article.section1 div.aktuelt {
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+article.section1 div.aktuelt h2 {
+  font-size: 2.8rem;
+  padding-bottom: 20px;
+  font-weight: normal;
+}
+
+article.section1 div.article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article.section1 div.article-list button {
+  padding: 8px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #1E7400;
+  border: 2px solid #1E7400;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+}
+
+article.section1 div.article-list a {
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+}
+
+article.section1 div.article-list a div.img {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+article.section1 div.article-list a div.img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+article.section1 div.article-list a.extra div.img img {
+  width: 100%;
+  min-height: 100%;
+}
+
+article.section1 div.article-list a h3, article.section1 div.article-list a p {
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  font-weight: normal;
+  background-color: #f9f9f9;
+}
+
+article.section1 div.article-list a h3 {
+  font-size: 20px;
+}
+
+article.section1 div.article-list a p {
+  font-size: 15px;
+  padding-bottom: 35px;
+}
+
+article.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+article.section2 img {
+  width: 100%;
+}
+
+article.section2 div.digitale {
+  text-align: center;
+}
+
+article.section2 div.digitale h3 {
+  font-size: 45px;
+  font-weight: normal;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+article.section2 div.digitale p {
+  font-size: 20px;
+  padding: 15px 0 0 0;
+}
+
+article.section2 div.green-line {
+  padding: 10px 0;
+}
+
+article.section2 div.les-mer div {
+  width: 100px;
+  margin: 0 auto;
+}
+
+article.section2 div.les-mer button {
+  padding: 8px 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: white;
+  background-color: #1E7400;
+  border: 2px solid #1E7400;
+}
+
+article.section3 {
+  padding: 20px;
+}
+
+article.section3 h3 {
+  font-size: 28px;
+  padding: 30px 0;
+  font-weight: normal;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+article.section3 div.cours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+article.section3 div.cours button {
+  width: 100%;
+  padding: 8px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #1E7400;
+  border: 2px solid #1E7400;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+}
+
+article.section3 div.cours div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+article.section3 div.cours div a {
+  display: block;
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+article.section3 div.cours div div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 90%;
+  padding: 0 0;
+}
+
+article.section3 div.cours div div.wrapper p {
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 0 10px 0;
+}
+
+article.section3 div.cours div div.wrapper button {
+  width: 50%;
+  font-size: 13px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+article.section4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+article.section4 h3 {
+  font-size: 28px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+article.section4 button {
+  width: 100%;
+  padding: 8px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #1E7400;
+  border: 2px solid #1E7400;
+  -webkit-box-ordinal-group: 100;
+      -ms-flex-order: 99;
+          order: 99;
+}
+
+article.section4 div.job {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+article.section4 div.job a {
+  text-decoration: none;
+}
+
+article.section4 div.job a div.image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+article.section4 div.job a div.image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+article.section4 div.job a h4 {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 15px;
+  color: black;
+  background-color: #f7f7f7;
+}
+
+article.section4 div.job p {
+  font-size: 15px;
+  padding: 0 15px 15px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #f7f7f7;
+}
+
+footer {
+  background-color: #2e2d30;
+  color: white;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer div.logo div.image img {
+  padding: 15px 0;
+}
+
+footer div.logo div.policy p {
+  padding-bottom: 10px;
+}
+
+footer div.logo div.media i {
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+footer div.contact h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+footer div.contact div.info div.tel, footer div.contact div.info div.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+}
+
+footer div.contact div.info div.tel i, footer div.contact div.info div.email i {
+  padding-right: 10px;
+  padding-left: 10px;
+  line-height: 140%;
+}
+
+footer div.contact div.info div.tel p, footer div.contact div.info div.email p {
+  line-height: 140%;
+}
+
+footer div.contact div.info div.page p {
+  padding-left: 34px;
+}
+
+footer div.last {
+  padding: 10px;
+}
+
+footer div.last div.org {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div.last div.org i {
+  padding-right: 10px;
+  line-height: 140%;
+}
+
+footer div.last div.org p {
+  line-height: 140%;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,21 +1,22 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import "./App.css";
-import Header from "./layouts/Header";
-import Page from "./layouts/Page";
+import "./css/style.css";
+import Navigation from "./layouts/Navigation";
+import Content from "./layouts/Content";
+import Footer from "./layouts/Footer";
 
 class App extends Component {
   state = {};
   render() {
     return (
       <Router>
-        <div className="app">
-          <header>{<Header />}</header>
-          <section className="page">
-            <Page />
+        <div className="master-wrapper">
+          {<Navigation />}
+          <section className="content">
+            <Content />
           </section>
           <footer>
-            <p>foter</p>
+            <Footer />
           </footer>
         </div>
       </Router>

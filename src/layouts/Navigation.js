@@ -20,19 +20,18 @@ const Header = () => {
   ));
   return (
     <>
-      <div className="mobile-header-row">
-        <div className="mobile-branding">
-          <div className="logo">
-            <Link to="#">
-              <img src={logo} alt="logo" />
-            </Link>
-          </div>
+      <div className="navigation-row">
+        <div className="branding">
+          <Link to="/">
+            <img src={logo} alt="logo" />
+          </Link>
+        </div>
+        <div className="navigation">
           <i className="fas fa-bars" />
         </div>
-
-        <nav className="mobile-main-navigation">
+        <div className="main-navigation">
           <ul className="navigation-top-level">{menuList}</ul>
-        </nav>
+        </div>
       </div>
     </>
   );
