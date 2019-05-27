@@ -8,7 +8,6 @@ article.section3
   div.cours
     display: flex
     flex-wrap: wrap
-
     button
       width: 100%
       padding: 8px 20px
@@ -46,4 +45,39 @@ article.section3
           margin-top: 0
           margin-bottom: 0
 
-      
+@media(min-width: 767px)
+  article.section3 
+    padding: 20px 50px
+    h3 
+      font-size: 3.5rem
+    div.cours
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      button
+        width: 25%
+        margin-top: 0px
+        margin-bottom: 10px
+        order: 0
+      div
+        a 
+          padding-top: 20px
+        div.wrapper
+          justify-content: flex-start
+          width: 100%
+          p 
+            width: 13%
+            padding: 10px 0 10px 0
+            &:nth-of-type(even)
+              width: 15%
+              font-weight: bold
+              margin-left: 5px
+            &:nth-of-type(odd)
+              width: 10%
+              text-align: right
+            &:nth-of-type(1)
+              width: 7%
+            &:nth-of-type(2)
+              flex-grow: 1
+          button
+            width: 20%
