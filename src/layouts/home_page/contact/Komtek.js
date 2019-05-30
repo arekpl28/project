@@ -10,10 +10,12 @@ const Komtek = props => {
           <img src={image} alt={name} />
         </div>
         <div className="wraper-box">
-          <div className="name">{name}</div>
-          <div className="msg">{msg}</div>
-          <div className="tel">Tlf. {tel}</div>
-          <div className="email">{email}@norkart.no</div>
+          <div className="info">
+            <div className="name">{name}</div>
+            <div className="msg">{msg}</div>
+            <div className="tel">Tlf. {tel}</div>
+            <div className="email">{email}@norkart.no</div>
+          </div>
           <form>
             <textarea
               placeholder={`Skriv en kort beskjed til ${name} her, så tar han/hun kontakt`}

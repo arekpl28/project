@@ -6,7 +6,7 @@ import article3 from "../../images/article3.png";
 import article4 from "../../images/article4.png";
 const articleList = [
   {
-    name: "Hvordan kan kommunene lykkes med digitalisering?",
+    name: "Hvordan kan kommunene lykkes...",
     text: "Norkart inviterer til Digitaliseringsseminar for",
     path: "/",
     import: article1
@@ -18,7 +18,7 @@ const articleList = [
     import: article2
   },
   {
-    name: "Regionreform 2020 - Får du nytt kommunenummer?",
+    name: "Regionreform 2020 - Får du nytt kommunenu...",
     text:
       "Når kommuner endres eller skifter kommunenummer, vil det føre til endringer i matrikkeldataene. Dette har",
     path: "/",

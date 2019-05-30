@@ -62,38 +62,45 @@ article.section6
   article.section6 
     section 
       div.contact-box
+        display: flex
         width: 100%
         margin-top: 20px
         order: 99
         div.image
-          height: 70vw
+          height: 100%
+          width: 30vw
         div.wraper-box
+          display: flex
+          flex-direction: row-reverse
           padding: 30px 20px
-          div.name
-            font-size: 35px
-          div.msg
-            font-size: 25px
-          div.tel
-            font-size: 25px
-          div.email
-            font-size: 25px
-            word-break: break-all
-            color: #1E7400
-            padding-bottom: 15px
-          form 
-            textarea
+          div.info
+            width: 30vw
+
+            div.name
+              font-size: 26px
+            div.msg
               font-size: 20px
-              height: 150px
-              padding: 10px 20px
-            input 
+            div.tel
               font-size: 20px
-            label
-              padding-top: 20px
-              display: flex
-              input.check
-                margin-right: 20px 
-                width: 20px
-              p 
-                font-size: 20px
-            button
-              font-size: 17px
+            div.email
+              font-size: 20px
+              word-break: break-all
+              color: #1E7400
+              padding-bottom: 15px
+            form 
+              textarea
+                font-size: 15px
+                height: 150px
+                padding: 10px 20px
+              input 
+                font-size: 15px
+              label
+                padding-top: 20px
+                display: flex
+                input.check
+                  margin-right: 20px 
+                  width: 40px
+                p 
+                  font-size: 15px
+              button
+                font-size: 17px

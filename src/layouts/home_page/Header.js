@@ -6,6 +6,7 @@ import datavarehuset from "../../images/datavarehuset.png";
 import kommune from "../../images/kommune.png";
 import komtek from "../../images/komtek.png";
 import geodata from "../../images/geodata.png";
+import cloud from "../../images/cloud.png";
 
 let lineList = [];
 for (let i = 0; i < 5; i++) {
@@ -72,6 +73,8 @@ const Header = () => {
             <ul>{icon}</ul>
           </div>
         </div>
+        <img src={cloud} alt="cloud" className="slow cloud" />
+        <img src={cloud} alt="cloud" className="fast cloud" />
       </div>
     </>
   );
