@@ -1,11 +1,10 @@
 import React from "react";
 
-const Komtek = props => {
-  const { name, image, msg, tel, email } = props.data;
-  // const { name } = props.data;
+const Contact = props => {
+  const { name, image, msg, tel, email, extra } = props.data;
   return (
     <>
-      <div className="contact-box">
+      <div className={`contact-box ${extra}`}>
         <div className="image">
           <img src={image} alt={name} />
         </div>
@@ -20,7 +19,7 @@ const Komtek = props => {
             <textarea
               placeholder={`Skriv en kort beskjed til ${name} her, så tar han/hun kontakt`}
             />
-            <input type="email" name="" id="" placeholder="Din e-post" />
+            <input type="email" placeholder="Din e-post" />
             <label>
               <input type="checkbox" className="check" />
               <p>
@@ -37,4 +36,4 @@ const Komtek = props => {
   );
 };
 
-export default Komtek;
+export default Contact;

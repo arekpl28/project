@@ -365,7 +365,11 @@ article.section1 div.article-list a p {
     width: 48%;
     margin-bottom: 20px;
   }
+  article.section1 div.article-list a h3 {
+    height: 110px;
+  }
   article.section1 div.article-list a p {
+    height: 115px;
     padding-top: 0;
   }
 }
@@ -403,7 +407,11 @@ article.section1 div.article-list a p {
     width: 48%;
     margin-bottom: 20px;
   }
+  article.section1 div.article-list a h3 {
+    height: 70px;
+  }
   article.section1 div.article-list a p {
+    height: 70px;
     padding-top: 0;
   }
 }
@@ -598,10 +606,11 @@ article.section3 div.cours div div.wrapper button {
 }
 
 @media (min-width: 480px) {
-  article.section3 div.cours button {
+  article.section3 div.cours button.all {
     width: 150px;
     padding: 8px 20px;
     margin-top: 0;
+    margin-right: 100px;
     margin-bottom: 20px;
   }
   article.section3 div.cours div div.wrapper button {
@@ -628,7 +637,7 @@ article.section3 div.cours div div.wrapper button {
         flex-wrap: wrap;
   }
   article.section3 div.cours button {
-    width: 25%;
+    width: 200px;
     margin-top: 0px;
     margin-bottom: 10px;
     -webkit-box-ordinal-group: 1;
@@ -694,7 +703,7 @@ article.section3 div.cours div div.wrapper button {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  article.section3 div.cours button {
+  article.section3 div.cours button.all {
     width: 200px;
     padding: 8px 20px;
     margin-top: 0px;
@@ -763,11 +772,11 @@ article.section3 div.cours div div.wrapper button {
             flex-grow: 1;
   }
   article.section3 div.cours div div.wrapper button {
-    width: 200px;
+    width: 150px;
     font-size: 13px;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 50%;
+    margin-left: 70%;
     margin-right: 0;
   }
 }
@@ -855,6 +864,12 @@ article.section4 div.job p {
     width: 45%;
     margin-right: 20px;
   }
+  article.section4 div.job h4 {
+    height: 70px;
+  }
+  article.section4 div.job p {
+    height: 100px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -871,6 +886,7 @@ article.section4 div.job p {
   article.section4 button {
     width: 300px;
     margin-right: 55%;
+    margin-bottom: 30px;
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
@@ -974,12 +990,76 @@ article.section6 p {
   padding-bottom: 15px;
 }
 
+article.section6 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 article.section6 section button.contact {
   width: 100%;
   padding: 10px 15px;
   margin-bottom: 20px;
   font-size: 14px;
   border: none;
+  cursor: pointer;
+}
+
+article.section6 section button.contact:nth-of-type(1) {
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
+}
+
+article.section6 section button.contact:nth-of-type(2) {
+  -webkit-box-ordinal-group: 21;
+      -ms-flex-order: 20;
+          order: 20;
+}
+
+article.section6 section button.contact:nth-of-type(3) {
+  -webkit-box-ordinal-group: 31;
+      -ms-flex-order: 30;
+          order: 30;
+}
+
+article.section6 section button.contact:nth-of-type(4) {
+  -webkit-box-ordinal-group: 41;
+      -ms-flex-order: 40;
+          order: 40;
+}
+
+article.section6 section button.contact:nth-of-type(5) {
+  -webkit-box-ordinal-group: 51;
+      -ms-flex-order: 50;
+          order: 50;
+}
+
+article.section6 section button.contact:nth-of-type(6) {
+  -webkit-box-ordinal-group: 61;
+      -ms-flex-order: 60;
+          order: 60;
+}
+
+article.section6 section button.contact:nth-of-type(7) {
+  -webkit-box-ordinal-group: 71;
+      -ms-flex-order: 70;
+          order: 70;
+}
+
+article.section6 section button.contact:nth-of-type(8) {
+  -webkit-box-ordinal-group: 81;
+      -ms-flex-order: 80;
+          order: 80;
+}
+
+article.section6 section button.contact.active {
+  background-color: #1E7400;
+  color: white;
 }
 
 @media (min-width: 767px) {
@@ -993,6 +1073,10 @@ article.section6 section button.contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
@@ -1002,6 +1086,43 @@ article.section6 section button.contact {
   article.section6 section button.contact {
     width: 23%;
     padding: 10px 10px;
+  }
+  article.section6 section button.contact:nth-of-type(1) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(2) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(3) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(4) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(5) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(6) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(7) {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  article.section6 section button.contact:nth-of-type(8) {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
@@ -1108,6 +1229,54 @@ article.section6 section div.contact-box {
   margin-bottom: 20px;
 }
 
+article.section6 section div.contact-box.info {
+  -webkit-box-ordinal-group: 12;
+      -ms-flex-order: 11;
+          order: 11;
+}
+
+article.section6 section div.contact-box.tommy {
+  -webkit-box-ordinal-group: 22;
+      -ms-flex-order: 21;
+          order: 21;
+}
+
+article.section6 section div.contact-box.kenneth, article.section6 section div.contact-box.andreas {
+  -webkit-box-ordinal-group: 32;
+      -ms-flex-order: 31;
+          order: 31;
+}
+
+article.section6 section div.contact-box.espen {
+  -webkit-box-ordinal-group: 42;
+      -ms-flex-order: 41;
+          order: 41;
+}
+
+article.section6 section div.contact-box.mike, article.section6 section div.contact-box.eva {
+  -webkit-box-ordinal-group: 52;
+      -ms-flex-order: 51;
+          order: 51;
+}
+
+article.section6 section div.contact-box.arne {
+  -webkit-box-ordinal-group: 62;
+      -ms-flex-order: 61;
+          order: 61;
+}
+
+article.section6 section div.contact-box.magnus, article.section6 section div.contact-box.john {
+  -webkit-box-ordinal-group: 72;
+      -ms-flex-order: 71;
+          order: 71;
+}
+
+article.section6 section div.contact-box.resepsjon {
+  -webkit-box-ordinal-group: 82;
+      -ms-flex-order: 81;
+          order: 81;
+}
+
 article.section6 section div.contact-box div.image {
   position: relative;
   width: 100%;
@@ -1203,7 +1372,7 @@ article.section6 section div.contact-box div.wraper-box form button {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-top: 20px;
+    margin-bottom: 20px;
     -webkit-box-ordinal-group: 100;
         -ms-flex-order: 99;
             order: 99;

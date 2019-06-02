@@ -34,7 +34,7 @@ const articleList = [
 ];
 const Section_1 = () => {
   const article = articleList.map((item, index) => (
-    <NavLink key={index}>
+    <NavLink key={index} to={item.path}>
       <div className="image">
         <img src={item.import} alt={item.import} />
       </div>

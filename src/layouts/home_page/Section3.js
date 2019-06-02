@@ -66,7 +66,7 @@ const Section3 = () => {
       <article className="section3">
         <h3>Delta på kurs hos oss</h3>
         <div className="cours">
-          <button>Se alle kurs</button>
+          <button className="all">Se alle kurs</button>
           {courses}
         </div>
       </article>

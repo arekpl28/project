@@ -5,7 +5,7 @@ class Support extends Component {
   state = {};
   render() {
     return (
-      <>
+      <div className="contact-box info">
         <div className="wraper">
           <form className="suport" onSubmit={this.handleSubmit} noValidate>
             <label htmlFor="email">
@@ -18,7 +18,7 @@ class Support extends Component {
             </label>
             <button>Logg inn</button>
           </form>
-          <Link>Registrer ny bruker</Link>
+          <Link to="/">Registrer ny bruker</Link>
         </div>
         <div className="info">
           <h3>Logg deg inn i vårt selvbetjente kundesenter.</h3>
@@ -31,7 +31,7 @@ class Support extends Component {
             KOMTEK / Plan- og geodata kundestøtte: <span>674 83 888</span>
           </p>
         </div>
-      </>
+      </div>
     );
   }
 }
