@@ -7,6 +7,7 @@ import Footer from "./layouts/Footer";
 
 class App extends Component {
   state = {};
+
   render() {
     return (
       <Router>

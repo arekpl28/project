@@ -156,7 +156,8 @@ class Section6 extends Component {
         className: "contact",
         activeBtn: false
       }
-    ]
+    ],
+    activeNumber: 1
   };
 
   handleClickContakt = id => {
@@ -175,6 +176,38 @@ class Section6 extends Component {
     this.setState({
       buttonList: btn
     });
+
+    clearInterval(this.indexInterval);
+  };
+
+  componentDidMount() {
+    this.indexInterval = setInterval(this.changeActiveButton, 3000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.indexInterval);
+  }
+
+  changeActiveButton = () => {
+    let btn = this.state.buttonList.map(item => {
+      if (item.id !== this.state.activeNumber) {
+        item.className = "contact";
+        item.activeBtn = false;
+      }
+      if (item.id === this.state.activeNumber) {
+        item.className = "contact active";
+        item.activeBtn = true;
+      }
+      return item;
+    });
+    this.setState({
+      buttonList: btn,
+      activeNumber: this.state.activeNumber + 1
+    });
+    if (this.state.activeNumber === 8) {
+      this.setState({
+        activeNumber: 0
+      });
+    }
   };
 
   render() {
