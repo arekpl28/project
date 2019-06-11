@@ -1,9 +1,14 @@
 import React from "react";
 import Bodo from "../../../images/Bodo.jpg";
 
-const Art2 = () => {
+const Art2 = props => {
   return (
-    <div className="bodo co">
+    <div
+      className="bodo co"
+      style={{
+        left: `${props.scrollLeft}`
+      }}
+    >
       <div className="art">
         <img src={Bodo} alt="" />
         <div className="text">

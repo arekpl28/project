@@ -1,17 +1,28 @@
 article.section5 
-  margin: 30px 20px 20px 20px
+  margin: 30px 0
   font-size: 15px
   border-top: 1px solid rgba(0,0,0,0.2)
   overflow: hidden
   h3 
-    margin-top: 20px
-    margin-bottom: 20px
+    margin: 20px
     font-size: 2.8rem
     font-weight: normal
+  div.squares
+    display: flex
+    justify-content: space-between
+    width: 200px
+    height: 10px
+    margin: 30px auto 0
+    div.square
+      height: 10px
+      width: 10px
+      background-color: #34495e
+      &.active
+        background-color: #328812
   div.client
     // display: flex
     position: relative
-    width: 100%
+    width: 700vw
     top: 0
     left: 0
     height: 60vh
@@ -27,14 +38,16 @@ article.section5
         position: absolute
         top: 0
         left: 0
-        transform: translateX(0%)
-        width: 100%
+        width: 100vw
         height: 60vh
         flex-shrink: 0
         overflow-y: scroll
         padding: 10px 0px
+        transition: 0.3s
         &::-webkit-scrollbar
           display: none
+        &:nth-of-type(1)
+          transform: translateX(0%)
         &:nth-of-type(2)
           transform: translateX(100%)
         &:nth-of-type(3)

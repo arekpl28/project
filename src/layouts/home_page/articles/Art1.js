@@ -1,9 +1,14 @@
 import React from "react";
 import Balsfjord from "../../../images/Balsfjord.jpg";
 
-const Art1 = () => {
+const Art1 = props => {
   return (
-    <div className="balsfjord co">
+    <div
+      className="balsfjord co"
+      style={{
+        left: `${props.scrollLeft}`
+      }}
+    >
       <div className="art">
         <img src={Balsfjord} alt="" />
         <div className="text">
